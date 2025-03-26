@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ハワイ家族旅行 旅のしおり 2025</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700&display=swap');
+        
+        body {
+            font-family: 'M PLUS Rounded 1c', sans-serif;
+            background-color: #e6f9ff;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffb6c1' fill-opacity='0.2'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 15px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(255, 182, 193, 0.4);
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+            background: linear-gradient(135deg, #ff9faf, #ff69b4);
+            border-radius: 10px 10px 0 0;
+            margin: -15px -15px 15px -15px;
+            color: white;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            background: linear-gradient(135deg, #ff9faf, #ff69b4);
+            padding: 10px 15px;
+            border-radius: 10px;
+            display: inline-block;
+            margin-top: 30px;
+            font-size: 1.3em;
+            width: 100%;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .emoji-title {
+            font-size: 1.3em;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        .flight-info {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 3px 6px rgba(255, 182, 193, 0.3);
+        }
+
+        .family-section {
+            margin-bottom: 25px;
+            border-left: 5px solid #ff9faf;
+            padding-left: 15px;
+        }
+
+        .day-card {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 3px 10px rgba(255, 182, 193, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .day-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 8px;
+            height: 100%;
+            background: linear-gradient(to bottom, #ff69b4, #ff9faf);
+        }
+
+        .day-header {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 15px;
+            border-bottom: 2px dashed #ffccd5;
+            padding-bottom: 10px;
+            padding-left: 5px;
+        }
+
+        .day-date {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .day-title {
+            font-size: 1.1em;
+            font-weight: 500;
+            color: #ff69b4;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 3px;
+            margin: 10px 0;
+        }
+
+        li {
+            margin-bottom: 12px;
+            position: relative;
+            padding-left: 25px;
+            font-size: 0.95em;
+            word-break: break-word;
+        }
+
+        li::before {
+            content: '🏝️';
+            position: absolute;
+            left: 0;
+            font-size: 1.1em;
+        }
+
+        li:nth-child(2n)::before {
+            content: '🌺';
+        }
+
+        li:nth-child(3n)::before {
+            content: '🍍';
+        }
+
+        li:nth-child(4n)::before {
+            content: '🐬';
+        }
+
+        li:nth-child(5n)::before {
+            content: '🌴';
+        }
+
+        .highlight {
+            background-color: #ffecf1;
+            padding: 3px 6px;
+            border-radius: 5px;
+            font-weight: 500;
+        }
+
+        a {
+            color: #e91e63;
+            text-decoration: none;
+            transition: color 0.3s;
+            word-break: break-all;
+        }
+
+        a:hover {
+            color: #ff4081;
+            text-decoration: underline;
+        }
+
+        .special-event {
+            background-color: #ffecf1;
+            border-left: 4px solid #ff69b4;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            background-color: #fff0f5;
+            border-radius: 0 0 10px 10px;
+            font-size: 0.9em;
+        }
+
+        .emoji-icon {
+            font-size: 1.2em;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        .time {
+            font-weight: bold;
+            color: #d81b60;
+        }
+
+        /* スマホ最適化設定 */
+        h1 {
+            font-size: 1.8em;
+            margin-bottom: 5px;
+        }
+        
+        h3 {
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
+        
+        ul ul {
+            padding-left: 15px;
+        }
+        
+        ul ul li {
+            padding-left: 20px;
+            font-size: 0.9em;
+        }
+        
+        ul ul li::before {
+            font-size: 1em;
+        }
+        
+        section {
+            margin
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌈 ハワイ家族旅行 🌈</h1>
+            <p>2025年3月27日〜4月4日</p>
+        </header>
+
+        <section>
+            <h2><span class="emoji-title">✈️</span>フライト情報</h2>
+            
+            <div class="flight-info">
+                <div class="family-section">
+                    <h3>👴👵 祖父母（大阪 ⇄ ホノルル）</h3>
+                    <ul>
+                        <li><strong>往路</strong>：3月31日(月) 22:10 関西国際空港（JL792） → 4月1日(火) 10:45 ホノルル</li>
+                        <li><strong>復路</strong>：4月4日(金) 11:35 ホノルル（JL791） → 4月5日(土) 15:40 大阪</li>
+                    </ul>
+                </div>
+
+                <div class="family-section">
+                    <h3>👨‍👩‍👧‍👦 野口家（東京 ⇄ ホノルル）</h3>
+                    <ul>
+                        <li><strong>往路</strong>：3月27日(木) 21:00 羽田空港（JL74） → 3月27日(木) 09:00 ホノルル</li>
+                        <li><strong>復路</strong>：4月4日(金) 12:15 ホノルル（JL73） → 4月5日(土) 15:55 東京</li>
+                    </ul>
+                </div>
+
+                <div class="family-section">
+                    <h3>👨‍👩‍👧‍👦 井元家（沖縄 ⇄ ホノルル）</h3>
+                    <ul>
+                        <li><strong>往路</strong>：<br>
+                            3月29日(土) 16:15 沖縄 → 18:15 名古屋（NU44）<br>
+                            3月29日(土) 20:30 名古屋 → 3月30日(日) 08:30 ホノルル（JL794）
+                        </li>
+                        <li><strong>復路</strong>：<br>
+                            4月4日(金) 11:40 ホノルル（JL791） → 4月5日(土) 15:40 大阪<br>
+                            4月5日(土) 20:05 大阪 → 22:20 沖縄（NU9）
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2><span class="emoji-title">📅</span>日別スケジュール</h2>
+            
+            <div class="day-card">
+                <div class="day-header">
+                    <div class="day-date">🛬 3月27日(木)</div>
+                    <div class="day-title">ホノルル到着 & のんびりスタート</div>
+                </div>
+                <ul>
+                    <li><span class="time">09:00</span>：ホノルル空港到着 → <a href="https://www.google.com/maps/search/?api=1&query=Sheraton+Waikiki" target="_blank">シェラトン・ワイキキ</a>にチェックイン</li>
+                    <li>昼：軽めのローカルランチ（<a href="https://www.google.com/maps/search/?api=1&query=Rainbow+Drive-In+Honolulu" target="_blank">Rainbow Drive-In</a> or <a href="https://www.google.com/maps/search/?api=1&query=L%26L+Hawaiian+Barbecue+Waikiki" target="_blank">L&L</a>）</li>
+                    <li>午後：<a href="https://www.google.com/maps/search/?api=1&query=Royal+Hawaiian+Center" target="_blank">ロイヤルハワイアンセンター</a>で
+                        <ul>
+                            <li><a href="https://www.google.com/maps/search/?api=1&query=KITH+Waikiki" target="_blank">KITH</a>で服を調達</li>
+                            <li><a href="https://www.google.com/maps/search/?api=1&query=Island+Slipper+Royal+Hawaiian+Center" target="_blank">アイランドスリッパ</a>でサンダル購入</li>
+                            <li>軽食＆ショッピング</li>
+                        </ul>
+                    </li>
+                    <li>夜：<a href="https://www.google.com/maps/search/?api=1&query=Duke%27s+Waikiki" target="_blank">DUKE'S WAIKIKI</a> または <a href="https://www.google.com/maps/search/?api=1&query=House+Without+A+Key+Honolulu" target="_blank">House Without A Key</a> にてディナー</li>
+                </ul>
+            </div>
+
+            <div class="day-card">
+                <div class="day-header">
+                    <div class="day-date">🌺 3月28日(金)</div>
+                    <div class="day-title">ワイキキ観光 & 花火観賞</div>
+                </div>
+                <ul>
+                    <li>朝：<a href="https://www.google.com/maps/search/?api=1&query=Hau+Tree+Lanai+Restaurant" target="_blank">ハウツリー</a>で海を眺めながら朝食</li>
+                    <li>午前：<a href="https://www.google.com/maps/search/?api=1&query=Kapiolani+Park" target="_blank">カピオラニ公園</a>または<a href="https://www.google.com/maps/search/?api=1&query=Honolulu+Zoo" target="_blank">ホノルル動物園</a></li>
+                    <li>昼：<a href="https://www.google.com/maps/search/?api=1&query=Kakaako+Honolulu" target="_blank">カカアコエリア</a>でランチ＆ウォールアート巡り</li>
+                    <li>午後：<a href="https://www.google.com/maps/search/?api=1&query=Ala+Moana+Center" target="_blank">アラモアナセンター</a>でショッピング or プールでのんびり</li>
+                    <li>夜：<a href="https://www.google.com/maps/search/?api=1&query=Mariposa+at+Neiman+Marcus+Honolulu" target="_blank">マリポサ（Neiman Marcus）</a>でディナー（暫定）<br>
+                    <div class="special-event">→ <a href="https://www.google.com/maps/search/?api=1&query=Hilton+Hawaiian+Village+Waikiki+Beach+Resort" target="_blank">ヒルトン</a>近くの花火を観賞（20:00頃）</div></li>
+                </ul>
+            </div>
+
+            <div class="day-card">
+                <div class="day-header">
+                    <div class="day-date">🚗 3月29日(土)</div>
+                    <div class="day-title">クアロアランチ ドライブデー</div>
+                </div>
+                <ul>
+                    <li>朝：<a href="https://www.google.com/maps/search/?api=1&query=Island+Vintage+Coffee+Waikiki" target="_blank">アイランドヴィンテージコーヒー</a>で朝食</li>
+                    <li>午前：レンタカーで<a href="https://www.google.com/maps/search/?api=1&query=Kualoa+Ranch" target="_blank">クアロアランチ</a>へ → 映画ロケ地ツアーや乗馬体験など</li>
+                    <li>昼：施設内のレストランまたはローカルフード</li>
+                    <li>午後：<a href="https://www.google.com/maps/search/?api=1&query=Kaneohe+Bay" target="_blank">カネオヘ湾</a>〜<a href="https://www.google.com/maps/search/?api=1&query=Waimanalo+Beach" target="_blank">ワイマナロビーチ</a>へドライブ</li>
+                    <li>夜：ホテル周辺でディナー（<a href="https://www.google.com/maps/search/?api=1&query=Marukame+Udon+Waikiki" target="_blank">Marukame Udon</a> など）</li>
+                </ul>
+            </div>
+
+            <div class="day-card">
+                <div class="day-header">
+                    <div class="day-date">🌅 3月30日(日)</div>
+                    <div class="day-title">ホテルでゆったり & ナイトマーケット</div>
+                </div>
+                <ul>
+                    <li>朝：未定（各自で自由に）</li>
+                    <li>昼：<a href="https://www.google.com/maps/search/?api=1&query=Ono+Seafood+Honolulu" target="_blank">オノ・シーフード</a> or <a href="https://www.google.com/maps/search/?api=1&query=Garlic+Shrimp+Honolulu" target="_blank">ガーリックシュリンプ</a></li>
+                    <li>午後：のんびり自由行動（スパ・ショッピングなど）</li>
+                    <li>夜：<a href="https://www.google.com/maps/search/?api=1&query=Kakaako+Farmers+Market" target="_blank">カカアコのナイトマーケット</a> or フードトラック巡り</li>
+                </ul>
+            </div>
+
+            <div class="day-card">
+                <div class="day-header">
+                    <div class="day-date">🏖 3月31日(月)</div>
+                    <div class="day-title">コオリナへ移動 & 三世代集合</div>
+                </div>
+                <ul>
+                    <li>午前：ホテルでゆっくり・チェックアウト</li>
+                    <li>昼：<a href="https://www.google.com/maps/search/?api=1&query=Marriott+Ko+Olina+Beach+Club" target="_blank">マリオット・コオリナ</a>にチェックイン</li>
+                    <li>午後：ビーチやプールでリラックス</li>
+                    <li>夕方：ショッピングモールで<span class="highlight">BBQ食材の買い出し</span></li>
+                    <li>夜：<div class="special-event">マリオットのBBQエリアでBBQディナー 🍖</div></li>
+                </ul>
+            </div>
+
+            <div class="day-card">
+                <div class="day-header">
+                    <div class="day-date">🚐 4月1日(火)</div>
+                    <div class="day-title">アウラニ朝食 & ノースショアへドライブ</div>
+                </div>
+                <ul>
+                    <li><span class="time">10:00</span>：<a href="https://www.google.com/maps/search/?api=1&query=Aulani+Disney+Resort" target="_blank">アウラニ・レストラン</a>でキャラクターブレックファスト（予約済み）</li>
+                    <li><span class="time">12:00</span>：大きな車でノースショアへ出発</li>
+                    <li>午後：
+                        <ul>
+                            <li><a href="https://www.google.com/maps/search/?api=1&query=Haleiwa+Town" target="_blank">ハレイワタウン</a>を散策</li>
+                            <li><a href="https://www.google.com/maps/search/?api=1&query=Giovanni's+Shrimp+Truck" target="_blank">ジョバンニ</a> or <a href="https://www.google.com/maps/search/?api=1&query=Fumi's+Kahuku+Shrimp" target="_blank">フミズ</a>でガーリックシュリンプランチ</li>
+                            <li><a href="https://www.google.com/maps/search/?api=1&query=Matsumoto+Shave+Ice" target="_blank">マツモトシェイブアイス</a>でデザート</li>
+                            <li><a href="https://www.google.com/maps/search/?api=1&query=Mele+Mele+Bakery" target="_blank">Mele Mele Bakery</a>に立ち寄り</li>
+                            <li><a href="https://www.google.com/maps/search/?api=1&query=Waimea+Bay+Beach+Park" target="_blank">ワイメアビーチ</a> or <a href="https://www.google.com/maps/search/?api=1&query=Laniakea+Beach" target="_blank">ラニアケアビーチ</a>でのんびり</li>
+                        </ul>
+                    </li>
+                    <li><span class="time">18:30</span>：コオリナに帰着</li>
+                    <li>夜：スーパーで買い出し → ホテルの部屋でディナー</li>
+                </ul>
+            </div>
+
+            <div class="day-card">
+                <div class="day-header">
+                    <div class="day-date">🛍 4月2日(水)</div>
+                    <div class="day-title">お買い物Day & 豪華ディナー</div>
+                </div>
+                <ul>
+                    <li>朝：ゆっくり朝食</li>
+                    <li>午前：<a href="https://www.google.com/maps/search/?api=1&query=Waikele+Premium+Outlets" target="_blank">ワイケレ・プレミアム・アウトレット</a>でお買い物</li>
+                    <li>昼：<a href="https://www.google.com/maps/search/?api=1&query=Tanioka's+Seafoods" target="_blank">Tanioka's Seafoods</a> or <a href="https://www.google.com/maps/search/?api=1&query=Kainaハワイアン BBQ" target="_blank">カイナハワイアンBBQ</a></li>
+                    <li>午後：<a href="https://www.google.com/maps/search/?api=1&query=Ko+Olina+Lagoons" target="_blank">コオリナ・ラグーン</a>で遊ぶ or <a href="https://www.google.com/maps/search/?api=1&query=Aulani+Disney+Resort" target="_blank">アウラニ</a>周辺でのんびり</li>
+                    <li>夜：<div class="special-event"><a href="https://www.google.com/maps/search/?api=1&query=Mina's+Fish+House+Four+Seasons" target="_blank">Mina's Fish House（フォーシーズンズ）</a>で豪華ディナー ✨</div></li>
+                </ul>
+            </div>
+
+            <div class="day-card">
+                <div class="day-header">
+                    <div class="day-date">✈️ 4月3日(木)</div>
+                    <div class="day-title">野口家は帰国、他の家族は延泊</div>
+                </div>
+                <ul>
+                    <li>朝：朝食後チェックアウト</li>
+                    <li>【野口家】：ホノルル空港へ → JL73 12:15発で帰国</li>
+                    <li>【祖父母・井元家】：ワイキキへ移動し、さらにもう1泊</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer>
+            <p>💕 素敵なハワイ旅行になりますように 💕</p>
+            <p>ご質問があれば、いつでもお聞きください！</p>
+        </footer>
+    </div>
+</body>
+</html>
